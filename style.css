@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+
+}
+
 
 /*common rule*/
 .container{
@@ -29,11 +33,30 @@ a{
     padding-left: 1rem;
     padding-right: 1rem;
 }
+.col-8{
+    width: calc(100%/12*8);
+}
+.col-4{
+    width: calc(100%/12*4);
+}
+.col-3{
+    width: calc(100%/12*3);
+}
+.col-6{
+    widht:50%;
+}
 /*end common rule*/
 
 /*Debug*/
+.debug .container{
+    border: 2px solid red;
+}
 .debug #site_header{
     background-color: yellow;
+}
+.debug [class^="col-"]{
+    border: 2px dashed black;
+    min-height: 200px;
 }
 
 /*ened dbug*/
@@ -49,3 +72,15 @@ a{
 }
 
 /*end header*/
+
+/*Main*/
+main:nth-of-type(odd) {
+    background: ;
+  }
+  
+main:nth-of-type(even) {
+    background: ;
+  }
+
+
+/*end main*/

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*common rule*/
+.container{
+    width: 80%;
+    max-width: 1152px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+.sp-between{
+    justify-content: space-between;
+}
+ul{
+    list-style: none;    
+}
+a{
+    text-decoration: none;
+}
+[class^="col-"] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/*end common rule*/
+
+/*Debug*/
+.debug #site_header{
+    background-color: yellow;
+}
+
+/*ened dbug*/
+
+/*header*/
+#site_header {
+    height:50px;
+    background-color: ;
+}
+.menu{
+    display: flex;
+
+}
+
+/*end header*/

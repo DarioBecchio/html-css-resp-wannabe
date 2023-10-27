@@ -5,7 +5,11 @@
 }
 
 :root{
-
+    --blue:#0084FD;
+    --lblue:#B5DDFF;
+    --white:#FFFFFF;
+    --lille:#9792E4;
+    --dark:#333333;
 }
 
 
@@ -43,9 +47,51 @@ a{
     width: calc(100%/12*3);
 }
 .col-6{
-    widht:50%;
+    width:50%;
+}
+.col-12{
+    width: 100%;
+}
+.d-flex {
+    display: flex;
+}
+.center-demo{
+    text-align: center;
 }
 /*end common rule*/
+
+/*Responsive*/
+
+/*Small screen*/
+@media screen and (min-width:768px) {
+    .container{
+        width:90%
+    }
+    .col-md-8{
+        width: calc(100%/12*8);
+    }
+    .col-md-4{
+        width: calc(100%/12*4);
+    }
+    .col-lg-6{
+        width:50%;
+    }
+    .left-demo{
+        text-align: left;
+    }
+}
+/*end small screen*/
+
+/*Medium screen*/
+@media screen and (min-width:1024px) {
+    .container{
+        width: 90%;
+    }
+    
+}
+/*edn medium screen*/
+
+/*End Responsive*/
 
 /*Debug*/
 .debug .container{
@@ -53,18 +99,30 @@ a{
 }
 .debug #site_header{
     background-color: yellow;
+    height:50px;
 }
 .debug [class^="col-"]{
     border: 2px dashed black;
     min-height: 200px;
 }
 
-/*ened dbug*/
+.debug section:nth-of-type(odd) {
+    background-color:greenyellow;
+  }
+.debug section:nth-of-type(even) {
+    background-color: orange;
+  }
+.debug #site_footer{
+    background-color: brown;
+    height: 70px;
+}
+/*end dbug*/
+
 
 /*header*/
 #site_header {
-    height:50px;
-    background-color: ;
+    
+    background-color: var(--blue);
 }
 .menu{
     display: flex;
@@ -74,13 +132,12 @@ a{
 /*end header*/
 
 /*Main*/
-main:nth-of-type(odd) {
-    background: ;
+section:nth-of-type(odd) {
+    background-color: var(--white);
   }
   
-main:nth-of-type(even) {
-    background: ;
-  }
-
+section:nth-of-type(even) {
+    background-color: var(--lille);
+}
 
 /*end main*/

@@ -24,11 +24,12 @@
     flex-wrap: wrap;
     margin: 0 -1rem;
 }
-.sp-between{
-    justify-content: space-between;
-}
+
 ul{
     list-style: none;    
+}
+button{
+    list-style: none;
 }
 a{
     text-decoration: none;
@@ -37,7 +38,7 @@ i{
     font-size: 60px;
 }
 img{
-    max-width: 100%;
+    max-width: 60%;
 }
 [class^="col-"] {
     padding-left: 1rem;
@@ -57,52 +58,14 @@ img{
 }
 .col-12{
     width: 100%;
+}
+.d-flex{
     display: flex;
-    flex-direction: column;
-    text-align: center;
 }
-
-
-
+.sp-between{
+    justify-content: space-between;
+}
 /*end common rule*/
-
-/*Responsive*/
-
-/*Small screen*/
-@media screen and (min-width:768px) {
-    .container{
-        width:90%
-    }
-    .col-md-8{
-        width: calc(100%/12*8);
-        display: flex;
-        flex-direction: row;
-    }
-    .col-md-4{
-        width: calc(100%/12*4);
-    }
-    .col-lg-6{
-        width:50%;
-        text-align: left;
-    }
-    
-
-    .flex-column{
-        flex-direction: column;
-    }
-}
-/*end small screen*/
-
-/*Medium screen*/
-@media screen and (min-width:1024px) {
-    .container{
-        width: 90%;
-    }
-    
-}
-/*edn medium screen*/
-
-/*End Responsive*/
 
 /*Debug*/
 .debug .container{
@@ -127,6 +90,10 @@ img{
     background-color: brown;
     height: 70px;
 }
+.debug .demo{
+    background-color: rgb(14, 17, 138);
+}
+
 /*end dbug*/
 
 
@@ -150,5 +117,67 @@ section:nth-of-type(odd) {
 section:nth-of-type(even) {
     background-color: var(--lille);
 }
+.demo{
+    display: flex;
+    flex-wrap:wrap;
+    text-align:center;
+}
+.card{
+    display: flex;
+    align-items: center;
+}
 
 /*end main*/
+
+/*footer*/
+
+/*end footer*/
+
+
+
+
+
+/*Responsive*/
+
+/*Small screen*/
+@media screen and (min-width:768px) {
+    .container{
+        width:90%
+    }
+    .col-md-8{
+        width: calc(100%/12*8);
+        
+    }
+    .col-md-4{
+        width: calc(100%/12*4);
+        
+    
+    }
+    .col-lg-6{
+        width:50%;
+        text-align: left;
+    }
+    .ls-demo{
+       text-align: left;
+    }
+    
+
+}
+/*end small screen*/
+
+/*Medium screen*/
+@media screen and (min-width:1024px) {
+    .container{
+        width: 90%;
+        
+    }
+    .md-demo{
+       flex-wrap: nowrap;
+       text-align: center;
+         
+
+    }
+}
+/*end medium screen*/
+
+/*End Responsive*/

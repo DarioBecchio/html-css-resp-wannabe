@@ -33,6 +33,12 @@ ul{
 a{
     text-decoration: none;
 }
+i{
+    font-size: 60px;
+}
+img{
+    max-width: 100%;
+}
 [class^="col-"] {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -51,13 +57,13 @@ a{
 }
 .col-12{
     width: 100%;
-}
-.d-flex {
     display: flex;
-}
-.center-demo{
+    flex-direction: column;
     text-align: center;
 }
+
+
+
 /*end common rule*/
 
 /*Responsive*/
@@ -69,15 +75,20 @@ a{
     }
     .col-md-8{
         width: calc(100%/12*8);
+        display: flex;
+        flex-direction: row;
     }
     .col-md-4{
         width: calc(100%/12*4);
     }
     .col-lg-6{
         width:50%;
-    }
-    .left-demo{
         text-align: left;
+    }
+    
+
+    .flex-column{
+        flex-direction: column;
     }
 }
 /*end small screen*/

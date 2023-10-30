@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/2eaf4eb986.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="debug">
+<body class="">
     <header id="site_header">
         <div class="container">
             <div class="d-flex sp-between">
                 <div class="logo">
                     LOGO
                 </div>
-                <div >
-                    <ul class="menu">
+                <div class="menu">
+                    <div class="mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="desktop">
+                    <ul class="d-flex">
                         <li><a href="">Planning</a></li>    
                         <li><a href="">Planning</a></li>
                         <li><a href="">Planning</a></li>
                         <li><a href="">Planning</a></li>
                         <li><a href="">Planning</a></li>
                     </ul>
+                    </div>                        
                 </div>
             </div>
         </div>
@@ -33,21 +41,23 @@
                 <div class="row">
                     <div class="col-12 col-md-8">
                         <div class="demo md-demo ls-demo">
-                            <div class="">
-                                <h2>Get a demo application</h2>
-                                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, dignissimos inventore sunt ipsam ad ducimus rem deserunt enim veniam cupiditate!</p>
-                                <button> <i class="fa-brands fa-apple"></i> App store </button>
-                            </div>
-                            <div class="phone txt-al-center">
-                                <img src="./img/phone.png" alt="">
-                            </div>
+                            
+                                <div class="application">
+                                    <h2>Get a demo application</h2>
+                                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, dignissimos inventore sunt ipsam ad ducimus rem deserunt enim veniam cupiditate!</p>
+                                    <button> <i class="fa-brands fa-apple"></i> App store </button>
+                                </div>
+                                <div class="phone txt-al-center">
+                                    <img src="./img/phone.png" alt="">
+                                </div>
+                            
                         </div>
                                                     
                         
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="card">
-                            <i class="fa-solid fa-file-code"></i>
+                            <i class="fa-file-code fa-solid"></i>
                             <h4>Clean code</h4>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est atque earum provident voluptatum inventore dolorem fugiat dignissimos, vel exercitationem odio.</p>
                         </div>    
@@ -104,19 +114,20 @@
                         <h7>Testimonials</h7>
                         <h1> Lorem ipsum dolor sit amet.</h1>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aperiam dolorem expedita, perferendis placeat voluptatibus rem cum porro amet minima consequatur nemo, omnis velit aspernatur.</p>
-                    </div>    
-                    <div class="nat">
+                        <div class="nat">
                             <img class="circle" src="./img/testimonial1.jpg" alt="">
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, saepe earum ipsum vero maiores praesentium quia delectus dolores porro minima.</p>
-                    </div>
-                    <div class="celia">
+                        </div>
+                        <div class="celia">
                             <img class="circle" src="./img/testimonial2.jpg" alt="">
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, saepe earum ipsum vero maiores praesentium quia delectus dolores porro minima.</p>
-                    </div>
-                    <div class="bob">
+                        </div>
+                        <div class="bob">
                             <img class="circle" src="./img/testimonial3.jpg" alt="">
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, saepe earum ipsum vero maiores praesentium quia delectus dolores porro minima.</p>
-                    </div>
+                        </div>                    
+                    </div>    
+                    
                 </div>
             </div>
         </section>
@@ -125,33 +136,52 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4">
-                        <h1>01</h1>
-                        <h2>Lorem, ipsum.</h2>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p>
+                        <div class="cards">
+                            <h1>01</h1>
+                            <h2>Lorem, ipsum.</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p>
+                            <button> More </button>
+                        </div>                        
                     </div>
                     <div class="col-12 col-md-4">
-                        <h1>01</h1>
-                        <h2>Lorem, ipsum.</h2>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p></div>
+                        <div class="cards">
+                            <h1>01</h1>
+                            <h2>Lorem, ipsum.</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p>
+                            <button> More </button>
+                        </div>
+                    </div>    
                     <div class="col-12 col-md-4">
-                        <h1>01</h1>
-                        <h2>Lorem, ipsum.</h2>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p>
+                        <div class="cards">
+                            <h1>01</h1>
+                            <h2>Lorem, ipsum.</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p>
+                            <button> More </button>
+                        </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <h1>01</h1>
-                        <h2>Lorem, ipsum.</h2>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p>
+                        <div class="cards">
+                            <h1>01</h1>
+                            <h2>Lorem, ipsum.</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p>
+                            <button> More </button>
+                        </div>
                     </div> 
                     <div class="col-12 col-md-4">
-                        <h1>01</h1>
-                        <h2>Lorem, ipsum.</h2>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p>
+                        <div class="cards">
+                            <h1>01</h1>
+                            <h2>Lorem, ipsum.</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p>
+                            <button> More </button>
+                        </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <h1>01</h1>
-                        <h2>Lorem, ipsum.</h2>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p>
+                        <div class="cards">
+                            <h1>01</h1>
+                            <h2>Lorem, ipsum.</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt quasi sit repudiandae facilis quam doloremque, non cupiditate minima placeat at hic dignissimos illum enim ducimus nihil ea excepturi asperiores.</p>
+                            <button> More </button>
+                        </div>
                     </div> 
                 </div>
             </div>
@@ -167,17 +197,18 @@
                     <div class="col-12 col-md-4">
                         <div class="about-sm">
                             <img class="circle" src="./img/about.jpg" alt="" >
-                            <i class="quote" class="fa-solid fa-quote-left"></i>
+                            <i class="fa-solid fa-quote-left"></i>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, autem incidunt placeat deserunt error laborum.
                             </p>
+                            <button><i class="fa-brands fa-linkedin"></i>Find me on linkedin</button>
                         </div>                       
                     </div>
                 </div>
             </div>
         </section>
         <!-- /.section 5 -->
-        <section class="section-6"> 
+        <section class="simple"> 
             <div class="container">
                 <div class="free">
                     <h6>Get started</h6>
@@ -195,8 +226,11 @@
     </main>
     <!-- /#site_main -->
     <footer id="site_footer">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit, illo ex officiis inventore beatae.</p>
-        <a href=""> Lorem, ipsum.</a> Lorem ipsum dolor sit amet. <a href="">Lorem, ipsum.</a>
+        <div class="footer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit, illo ex officiis inventore beatae.</p>
+            <a href=""> Lorem, ipsum.</a> Lorem ipsum dolor sit amet. <a href="">Lorem, ipsum.</a>
+        </div>
+        
     </footer>
     <!-- /#site_footer -->
     
